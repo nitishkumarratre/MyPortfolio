@@ -1,0 +1,41 @@
+/*
+* 	Responsive grid pixel system - v1.1
+* 	Copyright 2022, marketify
+*   Author: marketify
+* 	Created Date : 01-01-2022
+*/
+
+.clearfix,
+.clearfix:after,
+.container{clear:both;}
+.container{height:auto}
+.container{width:100%}
+.clearfix:after
+.clearfix:before{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.container .container{
+	max-width: 100%;
+	padding: 0;
+}
+.container{
+	max-width:1210px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0 40px;
+	position:relative;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.container.wide{
+	max-width: 1480px;
+}
+.container.small{
+	max-width: 780px;
+}
+.container.full{max-width:100%}
+@media (max-width:1040px){.container{padding:0 20px;}}
+@media(max-width: 480px){.container{padding: 0 10px;}}
